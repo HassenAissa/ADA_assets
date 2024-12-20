@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPyWidget export</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "534101b5fb3f47379093355dbe0c0a44": {
+      "model_name": "SigmaModel",
+      "model_module": "ipysigma",
+      "model_module_version": "^0.24.3",
+      "state": {
+        "_dom_classes": [],
+        "camera_state": {
+          "ratio": 1,
+          "x": 0.5,
+          "y": 0.5,
+          "angle": 0
+        },
+        "data": {
+          "nodes": [
+            {
+              "key": "Herbivore",
+              "attributes": {
+                "tag": "source",
+                "x": 0,
+                "y": 0.5,
+                "ipysigma_kwarg_node_size": 6
+              }
+            },
+            {
+              "key": "Animal",
+              "attributes": {
+                "tag": "intermediate",
+                "ipysigma_kwarg_node_size": 4
+              }
+            },
+            {
+              "key": "Mammal",
+              "attributes": {
+                "tag": "intermediate",
+                "ipysigma_kwarg_node_size": 8
+              }
+            },
+            {
+              "key": "Zebra",
+              "attributes": {
+                "tag": "sink",
+                "x": 1,
+                "y": 0.5,
+                "ipysigma_kwarg_node_size": 2
+              }
+            },
+            {
+              "key": "Vertebrate",
+              "attributes": {
+                "tag": "intermediate",
+                "ipysigma_kwarg_node_size": 3
+              }
+            },
+            {
+              "key": "Elephant",
+              "attributes": {
+                "tag": "intermediate",
+                "ipysigma_kwarg_node_size": 4
+              }
+            },
+            {
+              "key": "Africa",
+              "attributes": {
+                "tag": "intermediate",
+                "ipysigma_kwarg_node_size": 3
+              }
+            },
+            {
+              "key": "Lion",
+              "attributes": {
+                "tag": "intermediate",
+                "ipysigma_kwarg_node_size": 5
+              }
+            },
+            {
+              "key": "Human",
+              "attributes": {
+                "tag": "intermediate",
+                "ipysigma_kwarg_node_size": 3
+              }
+            }
+          ],
+          "edges": [
+            {
+              "source": "Herbivore",
+              "target": "Animal",
+              "attributes": {
+                "weight": 74,
+                "color": "red"
+              }
+            },
+            {
+              "source": "Herbivore",
+              "target": "Elephant",
+              "attributes": {
+                "weight": 9
+              }
+            },
+            {
+              "source": "Herbivore",
+              "target": "Lion",
+              "attributes": {
+                "weight": 43
+              }
+            },
+            {
+              "source": "Herbivore",
+              "target": "Africa",
+              "attributes": {
+                "weight": 1
+              }
+            },
+            {
+              "source": "Animal",
+              "target": "Mammal",
+              "attributes": {
+                "weight": 72,
+                "color": "red"
+              }
+            },
+            {
+              "source": "Animal",
+              "target": "Vertebrate",
+              "attributes": {
+                "weight": 3
+              }
+            },
+            {
+              "source": "Animal",
+              "target": "Human",
+              "attributes": {
+                "weight": 1
+              }
+            },
+            {
+              "source": "Mammal",
+              "target": "Zebra",
+              "attributes": {
+                "weight": 80,
+                "color": "red"
+              }
+            },
+            {
+              "source": "Mammal",
+              "target": "Lion",
+              "attributes": {
+                "weight": 3
+              }
+            },
+            {
+              "source": "Mammal",
+              "target": "Elephant",
+              "attributes": {
+                "weight": 1
+              }
+            },
+            {
+              "source": "Vertebrate",
+              "target": "Mammal",
+              "attributes": {
+                "weight": 2
+              }
+            },
+            {
+              "source": "Vertebrate",
+              "target": "Human",
+              "attributes": {
+                "weight": 1
+              }
+            },
+            {
+              "source": "Elephant",
+              "target": "Mammal",
+              "attributes": {
+                "weight": 6
+              }
+            },
+            {
+              "source": "Elephant",
+              "target": "Herbivore",
+              "attributes": {
+                "weight": 1
+              }
+            },
+            {
+              "source": "Africa",
+              "target": "Lion",
+              "attributes": {
+                "weight": 1
+              }
+            },
+            {
+              "source": "Africa",
+              "target": "Herbivore",
+              "attributes": {
+                "weight": 1
+              }
+            },
+            {
+              "source": "Lion",
+              "target": "Zebra",
+              "attributes": {
+                "weight": 46
+              }
+            },
+            {
+              "source": "Lion",
+              "target": "Mammal",
+              "attributes": {
+                "weight": 1
+              }
+            },
+            {
+              "source": "Human",
+              "target": "Mammal",
+              "attributes": {
+                "weight": 2
+              }
+            }
+          ],
+          "options": {
+            "type": "directed",
+            "multi": false
+          }
+        },
+        "edge_weight": "weight",
+        "height": "calc(100vh - 16px)",
+        "layout": null,
+        "layout_settings": null,
+        "max_categorical_colors": 30,
+        "name": null,
+        "node_metrics": {
+          "louvain": {
+            "name": "louvain"
+          }
+        },
+        "program_settings": {},
+        "renderer_settings": {
+          "zIndex": true,
+          "enableEdgeClickEvents": false,
+          "enableEdgeHoverEvents": false,
+          "labelDensity": 1,
+          "labelGridCellSize": 250,
+          "renderEdgeLabels": true,
+          "labelFont": "sans-serif",
+          "hideEdgesOnMove": false,
+          "defaultNodeType": "border",
+          "defaultEdgeType": "curve"
+        },
+        "selected_edge": null,
+        "selected_edge_category_values": null,
+        "selected_node": null,
+        "selected_node_category_values": null,
+        "snapshot": null,
+        "start_layout_for_seconds": null,
+        "sync_key": null,
+        "sync_targets": [
+          "selection",
+          "hover",
+          "layout",
+          "camera"
+        ],
+        "ui_settings": {
+          "hideInfoPanel": false,
+          "hideSearch": false
+        },
+        "visual_variables": {
+          "nodeLabel": {
+            "type": "raw",
+            "attribute": "label",
+            "default": null
+          },
+          "nodeLabelSize": {
+            "type": "constant",
+            "default": 14
+          },
+          "nodeLabelColor": {
+            "type": "constant",
+            "default": "#000"
+          },
+          "nodeColor": {
+            "type": "category",
+            "attribute": "tag",
+            "default": "#999"
+          },
+          "nodeColorSaturation": {
+            "type": "disabled",
+            "default": null
+          },
+          "nodeBorderColor": {
+            "type": "dependent",
+            "value": "node",
+            "default": null
+          },
+          "nodeBorderRatio": {
+            "type": "disabled",
+            "default": null
+          },
+          "nodeBorderSize": {
+            "type": "constant",
+            "default": 1
+          },
+          "nodeSize": {
+            "type": "continuous",
+            "range": [
+              3,
+              20
+            ],
+            "attribute": "ipysigma_kwarg_node_size",
+            "default": 3
+          },
+          "nodePictogram": {
+            "type": "disabled",
+            "default": null
+          },
+          "nodePictogramColor": {
+            "type": "constant",
+            "default": "#000"
+          },
+          "nodeHaloSize": {
+            "type": "disabled",
+            "default": null
+          },
+          "nodeHaloColor": {
+            "type": "constant",
+            "default": "red"
+          },
+          "nodeShape": {
+            "type": "disabled",
+            "default": null
+          },
+          "edgeLabel": {
+            "type": "raw",
+            "attribute": "label",
+            "default": null
+          },
+          "edgeColor": {
+            "type": "raw",
+            "attribute": "color",
+            "default": "#ccc"
+          },
+          "edgeSize": {
+            "type": "continuous",
+            "range": [
+              0.5,
+              10
+            ],
+            "attribute": "size",
+            "default": 0.5
+          },
+          "edgeCurveness": {
+            "type": "constant",
+            "default": 0.25
+          }
+        }
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "534101b5fb3f47379093355dbe0c0a44"}
+</script>
+
+</body>
+</html>
